@@ -5,4 +5,4 @@
 docker stop mxs-mpd &> /dev/null
 docker rm mxs-mpd &> /dev/null
 docker build -t docker-mpd .
-docker run --name mxs-mpd -v $(pwd)/music:/music -p 127.0.0.1:20006:8000 -p 127.0.0.1:6600:6600 docker-mpd
+docker run -d --name mxs-mpd -v $(pwd)/music:/music -p 127.0.0.1:20006:8000 -p 127.0.0.1:6600:6600 docker-mpd
