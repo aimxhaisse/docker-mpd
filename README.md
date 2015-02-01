@@ -1,2 +1,3 @@
 # docker-mpd
-MPD server broadcasting to a HTTP stream
+
+MPD server broadcasting to a HTTP stream.

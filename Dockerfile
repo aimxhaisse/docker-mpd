@@ -8,4 +8,5 @@ RUN apt-get update && apt-get install -q -y	\
 RUN service mpd start &&			\
     service mpd stop
 
-CMD /usr/bin/mpd --no-daemon
+ADD patches /
+CMD /run.bash
